@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+var a= new Array()    //ARRAY DECLARED  & INITIALIZED STATICALLY
+var i,c=0;
+
+for(i=1;i<=5;i++)
+{
+	a[i]=parseInt(prompt("Enter Number:",''));				//ARRAY ELEMENTS ACCESSED
+}
+var s=parseInt(prompt("Enter Number to Search: ",''));
+for(i=0;i<a.length;i++)
+{
+	if(a[i]==s)
+	{
+		c=1;
+	}
+}
+if(c==0)
+{
+	alert("Number not present")
+}
+else
+{
+	alert("Number is present")
+}
+	
+</script>
+</body>
+</html>

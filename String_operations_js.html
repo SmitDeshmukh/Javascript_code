@@ -1,0 +1,44 @@
+<html>
+<body>
+<script>
+var a,i,r='',b,c,j,d,r1='';
+a=prompt("Enter String1: ",'');
+i=a.length;
+while(i>0)
+{
+	r=r+a.substring(i-1,i);
+	i--;
+}
+alert("Reverse String is: "+r)
+
+b=prompt("Enter String2: ",'');
+if(a==b)
+{
+	alert("String equal")
+}
+else
+{
+	alert("String Unequal")
+}	
+c=a.concat(b);
+alert("Concatinated String is: "+c)
+d=prompt("Enter String: ");
+j=d;
+i=d.length;
+while(i>0)
+{
+	r1=r1+d.substring(i-1,i);
+	i--;
+}
+if(r1==j)
+{
+	alert("String is palindrome ");
+}
+else
+{
+	alert("String is not palindrome ");
+}
+
+</script>
+</body>
+</html>

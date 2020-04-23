@@ -1,0 +1,92 @@
+<html>
+<head>
+<SCRIPT>
+function Display(ele)
+{
+var a="Yo have Selected";
+with(window.document.forms.Form3)
+{
+	if(s1.checked==true)
+	{
+	a=a+"java <br>";
+	}
+	if(s2.checked==true)
+	{
+		a=a+"js <br>";
+	}
+	if(s3.checked==true)
+	{
+		a=a+"nma";
+	}
+}
+alert(a);
+}
+
+function onc(e)
+{
+//with(window.document.forms.f1);
+	
+	if(e==1)
+	{
+		window.document.forms.f1.Clist[0].text="Computer Workshop";
+		window.document.forms.f1.Clist[0].value="1";
+		
+		window.document.forms.f1.Clist[1].text="Math 1";
+		window.document.forms.f1.Clist[1].value="2";
+		
+	}
+		
+	else if(e==2)
+	{
+		window.document.forms.f1.Clist[0].text="Digital Technique";
+		window.document.forms.f1.Clist[0].value="1";
+		
+		window.document.forms.f1.Clist[1].text="Dat Structure";
+		window.document.forms.f1.Clist[1].value="2";
+		
+	}
+	else if(e==3)
+{
+		window.document.forms.f1.Clist[0].text="Java Programing";
+		window.document.forms.f1.Clist[0].value="1";
+		
+		window.document.forms.f1.Clist[1].text="Java SCript";
+		window.document.forms.f1.Clist[1].value="2";
+		
+	}
+		
+}
+</SCRIPT>
+<BODY>
+<FORM name="f1">
+<input type="radio" name="Fy" value="1" onclick="onc(this.value)">First Year
+<input type="radio" name="Fy" value="2" onclick="onc(this.value)">Second Year
+<input type="radio" name="Fy" value="3" onclick="onc(this.value)">Third Year
+<br>
+<h3>Select Courses</h3>
+<Select name="Clist">
+<option value="1"></option>
+<option value="1"></option>
+</select>
+</FORM>
+
+<form id="f3" name="Form3" method="post">
+<fieldset><legend>
+<h2>COURSE DETAILS</h2></legend>
+<table>
+	<tr><th>Register</th><th>Course Name</th><th>Course Code</th></tr>
+	<tr><td> <input type="checkbox" id="JP" name="s1"></td><td>JAVA PROGRAMMING</td><td>CM345</td></tr>
+	<tr><td> <input type="checkbox" id="JS" name="s2"></td><td>JAVA SCRIPT</td><td>CM345</td></tr>
+	<tr><td> <input type="checkbox" id="NMA" name="s3"></td><td>NMA</td><td>CM345</td></tr>
+	</table>
+<H1 ALIGN="CENTER"><input type="button" value="Submit" onclick="Display(this.value)"></button></H1>
+</fieldset>
+</form>
+javascript:document.forms.reg.submit()
+
+
+
+
+ 
+</body>
+</html>

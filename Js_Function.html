@@ -1,0 +1,62 @@
+<html>
+<head>
+<script>
+function change()
+{
+var a1=document.getElementById('i1').value;
+if(window.document.forms.Form1.Fname.value==""||a1=="")
+{
+window.document.forms.f1.i1.style.color="violet";
+window.document.forms.f1.i1.style.background="Yellow";
+window.document.forms.f1.i2.style.color="violet";
+window.document.forms.f1.i2.style.background="Yellow";
+}
+}
+function display()
+{
+//var a=document.getElementById('i1').value;
+//var a1=window.document.forms.f1.i1.value;
+//var a2=window.document.forms.f1.i2.value;
+var a1=document.getElementById('i1').value;
+
+if(window.document.forms.Form1.Fname.value==""&& window.document.forms.Form1.Lname.value=="")
+{
+	alert("First name & Last Name Field Cannot be Empty");
+
+}
+else if(window.document.forms.Form1.Fname.value=="" || window.document.forms.Form1.Lname.value=="" )
+{
+	if(window.document.forms.Form1.Fname.value=="")
+	{
+		alert("Enter First Name");
+	}
+	else
+	{
+		alert("Enter Last Name");
+	}
+}
+
+else
+{
+	alert("Welcome  "+window.document.forms.f1.i1.value+" "+window.document.forms.f1.i2.value  );
+}
+}
+
+</script>
+</head>
+<body>
+<marquee> Welcome To Registration Form </marquee>
+<link href="smit.css" rel="stylesheet">
+<FORM name = "Form1" id="f1" onsubmit="display()" method="post">
+
+<P>
+	First Name: <INPUT type="text" id="i1" onblur="change()" name="Fname"/><BR>
+	Last Name: <INPUT type="text" id="i2" onblur="change()" name="Lname"/><BR>
+
+
+	<INPUT name="Submit" value="Submit" type="submit"/>
+	<INPUT name="Reset" value="Reset" type="reset"/>
+</P>
+</FORM> 
+</body>
+</html>

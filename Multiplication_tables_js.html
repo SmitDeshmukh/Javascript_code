@@ -1,0 +1,31 @@
+<HTML>
+<BODY>
+    
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/javascript">
+var a,j,s,d,m;
+
+//document.write("<h1> Table from 1 to 10 is:</h1>")
+a=parseInt(prompt("Enter number",''))
+j=parseInt(prompt("Enter number",''))
+document.write("<h1>Table From  "+a+"  To  "+j+"  is:</h1>")
+
+document.write("<table  border=5px>")
+for(d=1;d<=10;d++)
+{
+
+//document.write("<br>")	
+document.write("<tr>")
+for(m=a;m<=j;m++)
+{
+document.write("<td>  "+(m*d)+"</td>")	
+}
+document.write("</tr>")
+//document.write((1*s)+"  "+(2*s)+"  "+(3*s)+"  "+(4*s)+"  "+(5*s)+"  "+(6*s)+"  "+(7*s)+"  "+(8*s)+"  "+(9*s)+"  "+(10*s))
+}
+
+document.write("</table>")
+
+//alert("Value ="+s)
+</SCRIPT>
+</BODY>
+</HTML>	

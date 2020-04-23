@@ -1,0 +1,56 @@
+<HTML>
+<BODY>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/javascript">
+var s=new Array();
+var n=parseInt(prompt("Enter Number of sports: ",''))
+for(i=0;i<n;i++)
+{
+	s[i]=prompt("Enter sport: ",'')
+}
+do
+{
+var a=parseInt(prompt("1.length	2.print the list 3.Last sport entered 4.first 5.add new sport 6.Display separate list from user defined values	7.Exit",''))
+switch(a)
+{
+	case 1:
+	document.write("You have entered "+s.length+" sports")
+	break;
+	
+	case 2:
+	document.write("Sport List: <br>")
+	for(var  t=0;t<s.length;t++)
+	{
+	document.write("<BR>"+s[t] +"<BR> ")
+	}
+	break;
+	
+	case 3:
+		document.write("Last sport entered is "+s[n-1])
+	break;
+	
+	case 4:
+		document.write("First sport entered is "+s[0])
+	break;
+	
+	case 5:
+		var c=prompt("Enter sport: ",'')
+		s.push(c);
+		break;
+		
+	case 6:
+	var i,j;
+	i=parseInt(prompt("Enter starting  ",''))
+	j=parseInt(prompt("Enter Ending",''))
+	var m=s.slice(i,j);
+	for(i=0;i<m.length;i++)
+	{
+	document.write("<BR>"+m[i] +"<BR> ")
+	}
+	break;
+			
+	}
+	var ch=parseInt(prompt("Press 1 to continue ",''))
+}while(ch==1);
+</SCRIPT>
+</BODY>
+</HTML>	

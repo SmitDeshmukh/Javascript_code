@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function get()
+{
+var s1,s2,c=1;
+do{
+s1=prompt("Enter your username: ",'');
+var a=document.getElementById('uid').value;
+if(s1==a)
+{
+	s2=prompt("Enter your password: ",'');
+	var b=document.getElementById('pid').value;
+	if(s2==b)
+	{	
+		window.open("second.html");
+	}
+	else
+	{
+		c++;
+	}
+}
+else
+{
+	c++;
+}
+var ch=parseInt(prompt("Press 1 to try again: ",''));
+}while(ch==1 && c<=3);
+if(c>=3)
+{
+	window.open("third.html");
+}
+}
+</script>
+<body>
+<input type="text" id="uid">Enter username</input>
+<input type="password" id="pid">Enter password</input>
+<button value="Submit" onclick="get()">Submit</button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<HTML>
+<BODY>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/javascript">
+var a= new Array('Smit','Akshay','Yogesh')    //ARRAY DECLARED  & INITIALIZED STATICALLY
+var i;
+
+document.write("GROUP MEMBERS ARE <BR>")	
+/*for(i=0;i<a.length;i++)
+{
+	document.write(a[i] +"<BR> ")					//ARRAY ELEMENTS ACCESSED
+}*/
+a[a.length]='Sanket';							//ADDING ELEMENTS 
+a[a.length]='Mayur';
+/*document.write("UPDATED ARRAY IS<br>")
+for(i=0;i<a.length;i++)
+{
+	document.write("<BR>"+a[i] +"<BR> ")					//ARRAY ELEMENTS ACCESSED
+}
+//a.sort();*/
+//var c=a.slice(2,5);
+//a.concat()
+//document.write("SORTED ARRAY IS<br>")
+
+/*for(i=0;i<c.length;i++)
+{
+	document.write("<BR>"+c[i] +"<BR> ")					//ARRAY ELEMENTS ACCESSED
+}*/
+//for(i=0;i<a.length;i++)
+//{
+//	document.write("<BR>"+a +"<BR> "+a.join('>'))					//ARRAY ELEMENTS ACCESSED
+//}
+var s=a.shift();
+a.reverse();
+a.push('hello');
+var c=a.pop();
+for(i=0;i<a.length;i++)
+{
+	document.write("<BR>"+a[i] +"<BR> " +s)					//ARRAY ELEMENTS ACCESSED
+}
+
+</SCRIPT>
+</BODY>
+</HTML>	
